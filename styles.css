@@ -1,0 +1,92 @@
+/* 基本樣式 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('pokemon-center.jpg') no-repeat center center fixed; /* 替換為寶可夢中心的圖片 URL */
+    background-size: cover;
+    color: #fff; /* 文字顏色為白色，與背景對比更清晰 */
+    cursor: url('hammer_cursor.png'), auto; /* 使用槌子圖標，若圖標加載失敗則使用默認游標 */
+}
+
+header {
+    background-color: rgba(255, 203, 5, 0.8); /* 半透明的黃色背景 */
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #000;
+}
+
+#player-select {
+    margin: 20px;
+}
+
+#player-select button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.hole {
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明的白色背景 */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.pokemon {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#score-board {
+    margin: 20px;
+}
+
+#victory {
+    display: none;
+    background-color: rgba(255, 203, 5, 0.9); /* 半透明的黃色背景 */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+#victory h2 {
+    margin: 0;
+    color: #000;
+}
+
+#pokeball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: url('hammer_cursor.png'), auto; /* 特定元素使用槌子圖標 */
+    z-index: 10;
+}
+
+#pokeball img {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}

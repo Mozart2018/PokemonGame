@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寶可夢打地鼠</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>寶可夢打地鼠</h1>
+    </header>
+    <main>
+        <div id="player-select">
+            <button id="start-player1">玩家 1 開始</button>
+            <button id="start-player2" disabled>玩家 2 開始</button>
+        </div>
+        <div id="game">
+            <div class="hole" id="hole1"></div>
+            <div class="hole" id="hole2"></div>
+            <div class="hole" id="hole3"></div>
+            <div class="hole" id="hole4"></div>
+            <div class="hole" id="hole5"></div>
+            <div class="hole" id="hole6"></div>
+            <div class="hole" id="hole7"></div>
+            <div class="hole" id="hole8"></div>
+            <div class="hole" id="hole9"></div>
+        </div>
+        <div id="score-board">
+            <p>玩家 1 得分: <span id="score1">0</span></p>
+            <p>玩家 2 得分: <span id="score2">0</span></p>
+            <p>剩餘時間: <span id="timer">30</span> 秒</p>
+            <button id="restart" class="hidden">重新開始</button>
+        </div>
+        <div id="victory" class="hidden">
+            <h2>遊戲結束</h2>
+            <p id="winner"></p>
+            <button id="restart-victory">再玩一次</button>
+        </div>
+        <div id="pokeball">
+            <img src="pokeball.png" alt="寶可夢球" id="pokeball-img"> <!-- 替換為實際寶可夢球圖片 -->
+        </div>
+
+        <!-- 背景音樂 -->
+        <audio id="background-music" src="background-music.mp3" loop></audio>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
