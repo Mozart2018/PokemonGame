@@ -6,7 +6,7 @@ body {
     padding: 0;
     background: url('pokemon-center.jpg') no-repeat center center fixed; /* 替換為寶可夢中心的圖片 URL */
     background-size: cover;
-    color: #fff; /* 文字顏色為白色，與背景對比更清晰 */
+    color: #02164e; /* 文字顏色為深藍色 */
     cursor: url('hammer_cursor.png'), auto; /* 使用槌子圖標，若圖標加載失敗則使用默認游標 */
 }
 
